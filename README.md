@@ -12,9 +12,9 @@ Getting started:
 1. Install docker-compose:
 https://docs.docker.com/compose/install/
 
-2. In posstgresql/.env.schema file:
-- fill this fields for database DB_USERNAME, DB_PASSWORD, DB_DATABASE
-- rename file as .env
+2. In `posstgresql/.env.schema` file:
+- fill this fields  `DB_USERNAME, DB_PASSWORD, DB_DATABASE`
+- rename file as `.env`
 
 3. Launch database server with:
-   docker-compose up
+   > docker-compose up
