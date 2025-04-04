@@ -1,0 +1,12 @@
+services:
+  db:
+    image: postgres:17
+    restart: always
+    environment:
+      POSTGRES_USER: ${DB_USERNAME}
+      POSTGRES_PASSWORD: ${DB_PASSWORD}
+      POSTGRES_DB: ${DB_DATABASE}
+    ports:
+      - "${DB_ENDPOINT_PORT}:${DB_PORT}"
+    volumes:
+      - ./init:/docker-entrypoint-initdb.d
